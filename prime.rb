@@ -1,8 +1,9 @@
 def prime?(num)
+  prime = true
   for x in 2..num - 1
   if num % x == 0
-    return false
+    prime = false
   end
 end
-true
+return prime
 end
