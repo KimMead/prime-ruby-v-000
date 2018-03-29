@@ -1,9 +1,9 @@
 def prime?(num)
-  num != -num
-  for x in 2..num - 1
-  if num % x == 0
+  if num >= 2
+    (2..num - 1).all? do |x|
+      number % x != 0
+    end
+  else
     return false
   end
-end
-return true
 end
