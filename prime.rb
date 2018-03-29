@@ -1,7 +1,7 @@
 def prime?(num)
   num != -num
   for x in 2..num - 1
-  if num % x == 0 
+  if num % x == 0
     return false
   end
 end
